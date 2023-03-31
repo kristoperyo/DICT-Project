@@ -186,7 +186,7 @@
               <ul class="menu-sub">
                 <li class="menu-item">
                   <a href="pages-misc-error.html" class="menu-link">
-                    <div data-i18n="Error">Error</div>
+                    <div data-i18n="Error">Whats</div>
                   </a>
                 </li>
                 <li class="menu-item">
