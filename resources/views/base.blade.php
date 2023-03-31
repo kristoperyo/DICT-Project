@@ -129,14 +129,6 @@
 
           <ul class="menu-inner py-1">
 
-            <!-- Layouts -->
-            <li class="menu-item">
-              <a href="{{ url('employees')}}" class="menu-link">
-                <i class="menu-icon tf-icons bx bx-layout"></i>
-                <div data-i18n="Layouts">Users</div>
-              </a>
-            </li>
-
             <li class="menu-header small text-uppercase">
               <span class="menu-header-text">Profiling</span>
             </li>
