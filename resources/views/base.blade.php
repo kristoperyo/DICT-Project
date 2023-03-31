@@ -15,11 +15,7 @@
       content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
     />
 
-<<<<<<< HEAD
     <title>DICT</title>
-=======
-    <title>DICT Profiling</title>
->>>>>>> 0b140d145be05870b85d625c5c5cec312a778d5a
 
     <meta name="description" content="" />
 
