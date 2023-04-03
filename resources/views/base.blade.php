@@ -135,7 +135,7 @@
             </li>
             <li class="menu-item">
               <a href="javascript:void(0);" class="menu-link menu-toggle">
-                <i class="menu-icon tf-icons bx bx-dock-top"></i>
+              <i class="menu-icon tf-icons bx bx-user-circle"></i>
                 <div data-i18n="Account Settings">Officials and Staffs</div>
               </a>
               <ul class="menu-sub">
@@ -153,7 +153,7 @@
             </li>
             <li class="menu-item">
               <a href="javascript:void(0);" class="menu-link menu-toggle">
-                <i class="menu-icon tf-icons bx bx-users-alt"></i>
+                <i class="menu-icon tf-icons bx bx-group"></i>
                 <div data-i18n="Authentications">Partners</div>
               </a>
               <ul class="menu-sub">
@@ -176,9 +176,8 @@
             </li>
             <li class="menu-item">
               <a href="javascript:void(0);" class="menu-link menu-toggle">
-                <i class="menu-icon tf-icons bx bxs-user-account"></i>
-                <i class='bx bxs-user-account'></i>
-                <div data-i18n="Misc">Training Speakers</div>
+                <i class="menu-icon tf-icons bx bx-user-voice"></i>
+                <div data-i18n="Training Speakers">Training Speakers</div>
               </a>
               <ul class="menu-sub">
                 <li class="menu-item">
