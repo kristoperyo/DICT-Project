@@ -16,4 +16,6 @@ class AuthController extends Controller
         User::create($input);
         return redirect('register')->with('flash_message', 'Register successful.');
     }
+
+  
 }

@@ -87,6 +87,5 @@ class UserController extends Controller
         return redirect()->back()->withErrors($validator->errors());
         
     }
-
     
 }
