@@ -13,7 +13,8 @@
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
-    />
+
+      />
 
     <title>DICT - Profiling</title>
 
@@ -148,16 +149,11 @@
                     <div data-i18n="Notifications">Notifications</div>
                   </a>
                 </li>
-                <li class="menu-item">
-                  <a href="pages-account-settings-connections.html" class="menu-link">
-                    <div data-i18n="Connections">Connections</div>
-                  </a>
-                </li>
               </ul>
             </li>
             <li class="menu-item">
               <a href="javascript:void(0);" class="menu-link menu-toggle">
-                <i class="menu-icon tf-icons bx bx-lock-open-alt"></i>
+                <i class="menu-icon tf-icons bx bx-users"></i>
                 <div data-i18n="Authentications">Partners</div>
               </a>
               <ul class="menu-sub">
