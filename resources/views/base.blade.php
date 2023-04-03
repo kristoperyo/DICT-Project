@@ -171,30 +171,33 @@
                   >Notifications</a
                 > -->
 
+
+                <!-- Notifications and Profile -->
                 <li class="nav-item navbar-dropdown dropdown-user dropdown">
-                  <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown">
-                    <div>
-                      <img src="{{ asset('') }}assets/img/avatars/bell.png" alt class="w-px-40 h-auto rounded-circle" height="10px"/>
-                    </div>
-                  </a>
-                  <ul class="dropdown-menu dropdown-menu-end">
-
-                  <li>
-                    <span class="fw-semibold d-block">Notifications</span>
-                  </li>
-
-                  <div class="dropdown-divider"></div>
-                    <li>
-                      <a class="dropdown-item" href="#">
-                        <div class="d-flex">
-                          <div class="flex-grow-1">
-
-                            <small class="text-muted">No notifications to show...</small>
+                    <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown">
+                      <div>
+                        <img src="{{url('/assets/img/avatars/bell.png')}}" alt="Notifications" width="27px"/>
+                      </div>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                      <li>
+                          <div class="d-flex">
+                            <div class="flex-grow-1">
+                              <span class="fw-semibold d-block">Notifications</span>
+                            </div>
                           </div>
-                        </div>
-                      </a>
-                    </li>
-                  </ul>
+                      </li>
+                    
+                      <div class="dropdown-divider"></div>
+                        <li>
+                          <a class="dropdown-item" href="#">
+                            <div class="d-flex">
+                              <div class="flex-grow-1">
+                                <small class="text-muted">No notifications to show...</small>
+                              </div>
+                            </div>
+                          </a>
+                    </ul>
                 </li>
 
                 <!-- User -->
@@ -215,7 +218,7 @@
                           </div>
                           <div class="flex-grow-1">
                             <span class="fw-semibold d-block">Cristopher Castillo</span>
-                            <small class="text-muted">OJT</small>
+                            <small class="text-muted">Intern</small>
                           </div>
                         </div>
                       </a>
@@ -225,7 +228,7 @@
                     </li>
                     <li>
                       <a class="dropdown-item" href="#">
-                        <i class="bx bx-user me-2"></i>
+                        <i class='bx bx-cog'></i>
                         <span class="align-middle">Account Setting</span>
                       </a>
                     </li>
