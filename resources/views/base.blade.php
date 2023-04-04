@@ -80,14 +80,14 @@
             <li class="menu-item">
               <a href="auth-login-basic.html" class="menu-link">
               <i class="menu-icon tf-icons bx bx-user-circle"></i>
-                <div data-i18n="Account Settings">Officials and Staffs</div>
+                <div data-i18n="Officials and Staffs">Officials and Staffs</div>
               </a>
             </li>
             
             <li class="menu-item">
               <a href="javascript:void(0);" class="menu-link menu-toggle">
                 <i class="menu-icon tf-icons bx bx-group"></i>
-                <div data-i18n="Authentications">Partners</div>
+                <div data-i18n="Partners">Partners</div>
               </a>
               <ul class="menu-sub">
                 <li class="menu-item">
@@ -181,7 +181,7 @@
                     </a>
                     <ul class="dropdown-menu dropdown-menu-end">
                       <li>
-                          <div class="d-flex">
+                          <div class="d-flex-notif">
                             <div class="flex-grow-1">
                               <span class="fw-semibold d-block">Notifications</span>
                             </div>
