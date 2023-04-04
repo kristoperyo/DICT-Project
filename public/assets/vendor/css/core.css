@@ -8873,6 +8873,12 @@ button.list-group-item-gray.active {
   display: flex !important;
 }
 
+.d-flex-notif {
+  display: flex !important;
+  margin-left: 15px;
+  margin-top: 5px;
+}
+
 .d-inline-flex {
   display: inline-flex !important;
 }
