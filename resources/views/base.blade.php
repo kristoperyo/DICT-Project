@@ -78,7 +78,7 @@
               <span class="menu-header-text">Profiling</span>
             </li>
             <li class="menu-item">
-              <a href="auth-login-basic.html" class="menu-link">
+              <a href="{{url('')}}" class="menu-link">
               <i class="menu-icon tf-icons bx bx-user-circle"></i>
                 <div data-i18n="Account Settings">Officials and Staffs</div>
               </a>

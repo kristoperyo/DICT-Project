@@ -16,6 +16,9 @@ use App\Http\Controllers\AuthController;
 */
 
 Route::get('/', [UserController::class, 'index']);
+
+// Route::resource('/userrofile', [UserController::class, 'userProfile']);
+
 Route::get('/register', [AuthController::class, 'register']);
 Route::post('/createUser', [AuthController::class, 'create']);
 

@@ -17,6 +17,7 @@ class UserController extends Controller
         $value = $request->header('X-Header-Name');
         return view('pages/home')->with('header', $value);
     }
+    
 
     public function show(){
         $data = User::all();
@@ -85,7 +86,5 @@ class UserController extends Controller
         }
         // return var_dump($validator->errors());
         return redirect()->back()->withErrors($validator->errors());
-        
-    }
-    
+    }  
 }
