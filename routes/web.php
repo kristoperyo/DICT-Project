@@ -29,3 +29,5 @@ Route::get('/test', [UserController::class, 'testPage']);
 Route::post('/tester', [UserController::class, 'testEnd']);
 
 Route::put('/update-user/{id}', [UserController::class, 'updateUser']);
+
+Route::get('view-records','PersonnelRetrieve@index');
