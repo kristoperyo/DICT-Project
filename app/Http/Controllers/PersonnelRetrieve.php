@@ -7,9 +7,9 @@ use DB;
 use app\Http\Controllers\Controller;
 class PersonnelRetrieve extends Controller
 {
-    //
-    public function index(){
-        $users = DB::select('select * from personnel');
-        return view('pages/home',['users'=>$users]);
-        }
+    // 
+    // public function index(){
+    //     $users = DB::select('select * from users');
+    //     return view('pages/home',['users'=>$users]);
+    //     }
 }

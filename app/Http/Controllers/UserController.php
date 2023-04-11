@@ -21,7 +21,7 @@ class UserController extends Controller
 
     public function show(){
         $data = User::all();
-        return view('pages/users')->with('users', $data);
+        return view('pages/home')->with('users', $data);
     }
 
     public function showUser(Request $request, string $id) {

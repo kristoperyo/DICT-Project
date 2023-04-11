@@ -14,20 +14,21 @@ use App\Http\Controllers\AuthController;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('/', [UserController::class, 'show']);
 
-Route::get('/', [UserController::class, 'index']);
+Route::get('home', [UserController::class, 'show']);
 
 // Route::resource('/userrofile', [UserController::class, 'userProfile']);
 
-Route::get('/register', [AuthController::class, 'register']);
-Route::post('/createUser', [AuthController::class, 'create']);
+// Route::get('/register', [AuthController::class, 'register']);
+// Route::post('/createUser', [AuthController::class, 'create']);
 
-Route::get('/employees', [UserController::class, 'show']);
-Route::get('/employee/{id}', [UserController::class, 'showUser']);
+// Route::get('/employees', [UserController::class, 'show']);
+// Route::get('/employee/{id}', [UserController::class, 'showUser']);
 
-Route::get('/test', [UserController::class, 'testPage']);
-Route::post('/tester', [UserController::class, 'testEnd']);
+// Route::get('/test', [UserController::class, 'testPage']);
+// Route::post('/tester', [UserController::class, 'testEnd']);
 
-Route::put('/update-user/{id}', [UserController::class, 'updateUser']);
+// Route::put('/update-user/{id}', [UserController::class, 'updateUser']);
 
-Route::get('view-records','PersonnelRetrieve@index');
+// Route::get('home', [UserController::class, 'show']);
