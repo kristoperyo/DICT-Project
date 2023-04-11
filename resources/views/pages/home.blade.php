@@ -24,7 +24,9 @@
                       <td class="p2">{{ $user->Position }}</td>
                       <td class="p2">{{ $user->Type }}</td>
                       <td class="p2">{{ $user->Department }}</td>
-                      <td><a href="#"><img src="{{ asset('') }}assets/img/icons/unicons/delete-xxl.png" alt class="w-px-20 h-auto"></a></td>
+                      <td>
+                      <div class ="image-container">  
+                      <a href="#"><img src="{{ asset('') }}assets/img/icons/unicons/delete-xxl.png" alt class="w-px-20 h-auto rounded-circle"></a></div></td>
                     </tr>
                     @endforeach
 
