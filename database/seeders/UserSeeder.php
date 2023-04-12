@@ -16,11 +16,10 @@ class UserSeeder extends Seeder
     public function run()
     {
         // DB::table('users')->insert([
-        //     'name' => 'harold',
-        //     'position' => 'assistant',
-        //     'type' => 'y',
+        //     'name' => 'Mink',
+        //     'position' => 'OIC',
+        //     'type' => 'Permanent',
         //     'department' => 'I.T',
-        //     'action' => 'g'
         // ]);
     }
 }

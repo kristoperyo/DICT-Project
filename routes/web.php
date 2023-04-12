@@ -20,7 +20,7 @@ Route::get('home', [UserController::class, 'show']);
 
 // Route::resource('/userrofile', [UserController::class, 'userProfile']);
 
-// Route::get('/register', [AuthController::class, 'register']);
+Route::get('/users', [AuthController::class, 'register']);
 // Route::post('/createUser', [AuthController::class, 'create']);
 
 // Route::get('/employees', [UserController::class, 'show']);
