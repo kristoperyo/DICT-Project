@@ -32,6 +32,7 @@
                       <td class="p2">{{ $user->Position }}</td>
                       <td class="p2">{{ $user->Type }}</td>
                       <td class="p2">{{ $user->Department }}</td>
+                      <td class="p2">{{ $user->Action }}</td>
                       <td>
                       <link rel="stylesheet" href="{{ asset('css/app.css') }}">
                       <div class ="image-container">  

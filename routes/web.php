@@ -20,12 +20,24 @@ Route::get('home', [UserController::class, 'show']);
 
 // Route::resource('/userrofile', [UserController::class, 'userProfile']);
 
-Route::get('/users', [AuthController::class, 'register']);
+// Route::post('/users', [AuthController::class, 'register']);
+// Route::get('/users', [AuthController::class, 'register']);
 // Route::post('/createUser', [AuthController::class, 'create']);
+
+Route::get('/register', [UserController::class, 'register']);
+Route::post('/register', [UserController::class, 'show']);
+
+
+// Route::get('/', [UserController::class, '']);
+// Route::post('/home', [UserController::class, 'updateUser']);
+
+// Route::get('/register', [UserController::class, 'updateUser']);
+
 
 // Route::get('/employees', [UserController::class, 'show']);
 // Route::get('/employee/{id}', [UserController::class, 'showUser']);
-
+// Route::get('/home', [UserController::class, 'updateUser']);
+// Route::post('/home', [UserController::class, 'updateUser']);
 // Route::get('/test', [UserController::class, 'testPage']);
 // Route::post('/tester', [UserController::class, 'testEnd']);
 

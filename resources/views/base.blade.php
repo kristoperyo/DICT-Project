@@ -79,7 +79,7 @@
             </li>
             <li class="menu-item">
               <a href="{{url('')}}" class="menu-link">
-              <i class="menu-icon tf-icons bx bx-user-circle"></i>
+              <i class="menu-icon bx bx-user-circle"></i>
                 <div data-i18n="Officials and Staffs">Officials and Staffs</div>
               </a>
             </li>
@@ -236,7 +236,7 @@
                       <div class="dropdown-divider"></div>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="{{url('users')}}">
+                      <a class="dropdown-item" href="{{url('register')}}">
                         <i class="bx bx-power-off me-2"></i>
                         <span class="align-middle">Log Out</span>
                       </a>

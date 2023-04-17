@@ -26,9 +26,8 @@ class UserController extends Controller
 
     public function showUser(Request $request, string $id) {
         $data = User::find($id);
-        return view('pages/user')
-                    ->with('user', $data)
-                    ->with('id', $id);
+        return view('pages/home')
+                    ->with('user', $data);
     }
 
     public function testPage(Request $request){
@@ -64,27 +63,48 @@ class UserController extends Controller
         
     }
 
-    public function updateUser(Request $request, $id) {
+    // public function updateUser(Request $request, $id) {
 
-        $validator = Validator::make($request->all(), [
-            'first_name' => 'required|min:3|max:60',
-            'last_name' => 'required|min:3|max:60',
-            'username' => 'required|min:3|max:60',
-            'email' => 'required|max:60',
-        ]);
+    //     $validator = Validator::make($request->all(), [
+    //         'name' => 'required|min:3|max:60',
+    //         'position' => 'required|min:3|max:60',
+    //         'type' => 'required|min:3|max:60',
+    //         'department' => 'required|max:60',
+    //         'action' => 'required|max:60',
+    //     ]);
         
-        if($validator->passes()){
-            $user = User::find($id);
-            $user->first_name = $request->input('first_name');
-            $user->last_name = $request->input('last_name');
-            $user->username = $request->input('username');
-            $user->email = $request->input('email');
-            $user->update();
+    //     if($validator->passes()){
+    //         $users = User::find($id);
+    //         $users->name = $request->input('name');
+    //         $users->position = $request->input('position');
+    //         $users->type = $request->input('type');
+    //         $users->department = $request->input('department');
+    //         $users->action = $request->input('action');
+    //         $users->update();
 
-            return redirect()->back()->with('success', 'Update successful');
-            // return 'success';
-        }
-        // return var_dump($validator->errors());
-        return redirect()->back()->withErrors($validator->errors());
-    }  
+    //         return redirect()->back()->with('success', 'Update successful');
+    //         // return 'success';
+    //     }
+    //     // return var_dump($validator->errors());
+    //     return redirect()->back();
+    //}  
+
+    public function updateUser(Request $request, User $users){
+        $data = $request->validate([
+            'Name' => 'required|min:3|max:60',
+            'Position' => 'required|min:3|max:60',
+            'Type' => 'required|min:3|max:60',
+            'Department' => 'required|max:60',
+            'Action' => 'required|max:60',
+        ]);
+        $input = $request->all();
+        $users->update($input);
+        return  view('pages/home')->with('users', $data);
+    }
+
+    function register(Request $req)
+     {
+        $data = User::all();
+        return view('auth/register') ->with('users', $data);
+     }
 }

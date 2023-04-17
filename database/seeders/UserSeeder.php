@@ -4,7 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
-use Illuminate\Support\Facades\Hash;
+// use Illuminate\Support\Facades\Hash;
 
 class UserSeeder extends Seeder
 {
@@ -15,11 +15,9 @@ class UserSeeder extends Seeder
      */
     public function run()
     {
-        // DB::table('users')->insert([
-        //     'name' => 'Mink',
-        //     'position' => 'OIC',
-        //     'type' => 'Permanent',
-        //     'department' => 'I.T',
-        // ]);
+        DB::table('users')->insert([
+            $data = User::all()
+        return view('pages/home')->with('users', $data);
+        ]);
     }
 }

@@ -8,7 +8,7 @@ use App\Models\User; //User model.
 class AuthController extends Controller
 {
     public function register() {
-        return view('auth/register');
+        return view('pages/home');
     }
 
     public function create(Request $request){
