@@ -19,7 +19,6 @@ class CreateUsersTable extends Migration
             $table->string("Position",60);
             $table->string("Type",60);
             $table->string("Department", 60);
-            $table->string("Action", 60);
             $table->timestamps();
         });
     }
@@ -30,6 +29,6 @@ class CreateUsersTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('errors');
+        Schema::dropIfExists('users');
     }
 }
