@@ -23,10 +23,11 @@ Route::post('/', [UserController::class, 'index']);
 // Route::resource('/userrofile', [UserController::class, 'userProfile']);
 
 // Route::post('/users', [AuthController::class, 'register']);
-// Route::get('/users', [AuthController::class, 'register']);
+Route::post('/create', [UserController::class, 'create']);
+Route::get('/create', [UserController::class, 'create']);
 // Route::post('/createUser', [AuthController::class, 'create']);
 
-// Route::get('/register', [UserController::class, 'register']);
+Route::post('/store', [UserController::class, 'store']);
 // Route::post('/register', [UserController::class, 'show']);
 
 
