@@ -13,32 +13,32 @@
     </div>
     @endif
 
-    <form action="{{ url('pages/home') }}" method="POST">
+    <form action="{{ route('users.store') }}" method="POST">
         @csrf
 
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
                     <strong>Name</strong>
-                    <input type="text" name="name" class="form-control" placeholder="name">
+                    <input type="text" name="name" class="form-control" placeholder="Name">
                 </div>
             </div>
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
                 <strong>Position</strong>
-                <input type="text" name="position" class="form-control" placeholder="position">
+                <input type="text" name="position" class="form-control" placeholder="Position">
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
                 <strong>Type</strong>
-                <input type="text" name="type" class="form-control" placeholder="type">
+                <input type="text" name="type" class="form-control" placeholder="Type">
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
                 <strong>Department</strong>
-                <input type="text" name="department" class="form-control" placeholder="department">
+                <input type="text" name="department" class="form-control" placeholder="Department">
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12 text-center">

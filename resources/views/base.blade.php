@@ -237,8 +237,8 @@
                     </li>
                     <li>
                       <a class="dropdown-item" href="{{ url('create') }}">
-                        <i class="bx bx-power-off me-2"></i>
-                        <span class="align-middle">Log Out</span>
+                        <i class="bx bx-user-plus me-2"></i>
+                        <span class="align-middle">Add New</span>
                       </a>
                     </li>
                   </ul>

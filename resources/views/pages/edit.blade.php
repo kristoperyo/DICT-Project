@@ -2,18 +2,6 @@
 
 @section('content')
 
-<div class="row">
-    <div class="col-lg-12 margin-tb">
-        <div class="pull-left">
-            <h2>Edit User</h2>
-        </div>
-
-    <div class="pull-right">
-        <a class="btn btn-primary"href="{{ route('users.index') }}">Back</a>
-    </div>
-    </div>
-</div>
-
 @if ($errors->any())
     <div class="alert alert-danger">
         <strong>WHOOPS</strong> There were some problems<br><br>
@@ -23,11 +11,13 @@
             @endforeach
         </ul>
     </div>
-@endif
+    @endif
+
 
 <form action="{{ route('users.update', $users->id) }}" method="POST">
     @csrf
-    @method('PUT')
+  
+@method('PUT')
 
     <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12">
@@ -57,9 +47,10 @@
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12 text-center">
-            <button type="submit" class="btn btn=primary">Submit</button>
+            <button type="submit" class="btn btn-primary">Submit</button>
         </div>
     </div>
 </form>
+
 
 @endsection

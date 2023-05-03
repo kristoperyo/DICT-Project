@@ -14,6 +14,8 @@ use App\Http\Controllers\AuthController;
 | contains the "web" middleware group. Now create something great!
 |
 */
+
+Route::resource('users','App\Http\Controllers\UserController');
  Route::get('/', [UserController::class, 'index']);
 //Route::resource('users','App\Http\Controllers\UserController');
 
@@ -27,8 +29,8 @@ Route::post('/create', [UserController::class, 'create']);
 Route::get('/create', [UserController::class, 'create']);
 // Route::post('/createUser', [AuthController::class, 'create']);
 
-Route::post('/store', [UserController::class, 'store']);
-// Route::post('/register', [UserController::class, 'show']);
+// Route::post('/store', [UserController::class, 'store']);
+// Route::get('/store', [UserController::class, 'store']);
 
 
 // Route::get('/', [UserController::class, '']);

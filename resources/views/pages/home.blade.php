@@ -33,12 +33,17 @@
                       <td class="p2">{{ $user->Type }}</td>
                       <td class="p2">{{ $user->Department }}</td>
                       <td>
-            <a class="btn btn-primary" href="#">Edit</a>
+
+                      <form action="{{ route('users.destroy', $user->id) }}" method="POST">
+            <a class="btn btn-primary" href="{{ route('users.edit', $user->id) }}">Edit</a>
             
                 @csrf
+                @method('DELETE')
 
                 <button type="submit" class="btn btn-danger">Delete</button>
             </form>
+                      </td>
+                    </tr>
                     @endforeach
                    
                     </tbody>
