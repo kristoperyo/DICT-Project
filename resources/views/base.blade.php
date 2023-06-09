@@ -16,7 +16,7 @@
 
       />
 
-    <title>DICT - Profiling</title>
+    <title>DICT-Profiling</title>
 
     <meta name="description" content="" />
 
@@ -24,6 +24,8 @@
     <link rel="icon" type="image/x-icon" href="{{ asset('') }}assets/img/favicon/DICT-Logo-Final-2-300x153 (1).ico" />
 
     <!-- Fonts -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -55,6 +57,7 @@
   </head>
 
   <body>
+  @include('sweetalert::alert')
     <!-- Layout wrapper -->
     <div class="layout-wrapper layout-content-navbar">
       <div class="layout-container">
@@ -78,14 +81,14 @@
               <span class="menu-header-text">Profiling</span>
             </li>
             <li class="menu-item">
-              <a href="{{url('')}}" class="menu-link">
+              <a  href="{{ url('users') }}" class="menu-link">
               <i class="menu-icon bx bx-user-circle"></i>
                 <div data-i18n="Officials and Staffs">Officials and Staffs</div>
               </a>
             </li>
             
             <li class="menu-item">
-              <a href="javascript:void(0);" class="menu-link menu-toggle">
+              <a href="{{ url('partners') }}" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-group"></i>
                 <div data-i18n="Partners">Partners</div>
               </a>
@@ -108,7 +111,7 @@
               </ul>
             </li>
             <li class="menu-item">
-              <a href="javascript:void(0);" class="menu-link menu-toggle">
+              <a href="{{ url('speaker') }}" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-user-voice"></i>
                 <div data-i18n="Training Speakers">Training Speakers</div>
               </a>
@@ -142,25 +145,36 @@
                 <i class="bx bx-menu bx-sm"></i>
               </a>
             </div>
-
             <div class="navbar-nav-right d-flex align-items-center" id="navbar-collapse">
               <!-- Search -->
-              <div class="navbar-nav align-items-center">
+              <!-- <h6 class="sidebar-title">Search</h6>
+              <form class="input-group" action="{{ route('users.index') }}" method="GET">
+                <input type="text" class="form-control" name="search" placeholder="Search" value="{{ request()->query('search') }}">
+                <div class="input-group-addon">
+                  <span class="input-group-text"><i class="ti-search"></i></span> -->
+
+                <!-- </div>
+
+              </form> -->
+              <div class="navbar-nav align-items-center" type="get">
                 <div class="nav-item d-flex align-items-center">
                   <i class="bx bx-search fs-4 lh-0"></i>
                   <input
+                  action="{{ url('home') }}"
+                  method="GET"
                     type="text"
+                    name="query"
                     class="form-control border-0 shadow-none"
                     placeholder="Search..."
                     aria-label="Search..."
                   />
                 </div>
               </div>
+              
               <!-- /Search -->
-
               <ul class="navbar-nav flex-row align-items-center ms-auto">
-                <!-- Place this tag where you want the button to render. -->
-                <li class="nav-item lh-1 me-3">
+              <li class="nav-item lh-1 me-3">
+              
                  <!-- <a 
                     class="github-button" 
                     href=#
@@ -211,7 +225,7 @@
                     <li>
                       <a class="dropdown-item" href="#">
                         <div class="d-flex">
-                          <div class="flex-shrink-0 me-3">
+                          <div class="flex-shrink-0 me-3"> 
                             <div class="avatar avatar-online">
                               <img src="{{ asset('') }}assets/img/avatars/profile.jpg" alt class="w-px-40 h-auto rounded-circle" />
                             </div>
@@ -254,6 +268,7 @@
           <div class="content-wrapper">
             <!-- Content -->
               @yield('content')
+
             
             <!-- / Content -->
 
@@ -265,7 +280,7 @@
                   <script>
                     document.write(new Date().getFullYear());
                   </script>
-                  , made with ❤️ by
+                  , made with ❤️ by 
                   <a href="https://themeselection.com" target="_blank" class="footer-link fw-bolder">DICT Interns</a>
                 </div>
                 <div>
@@ -323,5 +338,7 @@
 
     <!-- Place this tag in your head or just before your close body tag. -->
     <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+
   </body>
 </html>

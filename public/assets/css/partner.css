@@ -1,0 +1,63 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f9f9f9;
+  height: 100%;
+}
+
+.horizontal-scroll {
+  width: 800px;
+  height: 80px;
+  background-color: #fff;
+  border: 2px solid #ddd;
+  border-radius: 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.horizontal-scroll .btn-scroll {
+  background-color: #fff;
+  color: #999;
+  box-shadow: 0 0 10px #999;
+  padding: 5px 10px;
+  border: 0;
+  border-radius: 50%;
+  margin: 0 5px;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.storys-container {
+  display: flex; 
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  position: absolute;
+  left: 0;
+}
+
+.story-circle {
+  background: linear-gradient(rgb(10, 85, 197), rgb(227, 101, 5));
+  width: 60px;
+  height: 60px;
+  margin: 5px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  transform: rotateZ('45deg');
+}
+
+.story-circle img {
+  width: 52px;
+  height: 52px;
+  align-items: center;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  transform: rotateZ('-45deg');
+}
